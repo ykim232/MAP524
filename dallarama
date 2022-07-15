@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+	<head> <script type="text/javascript">if(!gform){document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0});var gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),null==t&&(t=10),gform.hooks[o][n].push({tag:i,callable:r,priority:t})},doHook:function(o,n,r){if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[o][n]){var t,i=gform.hooks[o][n];i.sort(function(o,n){return o.priority-n.priority});for(var e=0;e<i.length;e++)"function"!=typeof(t=i[e].callable)&&(t=window[t]),"action"==o?t.apply(null,r):r[0]=t.apply(null,r)}if("filter"==o)return r[0]},removeHook:function(o,n,r,t){if(null!=gform.hooks[o][n])for(var i=gform.hooks[o][n],e=i.length-1;0<=e;e--)null!=t&&t!=i[e].tag||null!=r&&r!=i[e].priority||i.splice(e,1)}}}</script>
+		<!-- <script src="https://adept-shop-ui.s3.us-east-2.amazonaws.com/production/oxford/autocomplete.js"></script> -->
+
+				
+		<!-- TrustArc OPGI Retail -->
+		<script type="text/javascript" async="async" src="//consent.trustarc.com/notice?domain=omers-opgi-retail.com&c=teconsent&js=nj&noticeType=bb&pcookie&gtm=1&text=true" crossorigin=""></script>
+
+
+		<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-578f0ed5bb2facafe91",applicationID:"1718306795"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Hotjar implementation - Header -->
+		
+		<!-- Facebook Pixel implementation - Header -->
+		
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-M47GMD5');</script>
+		<!-- End Google Tag Manager -->
+
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v17.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Dollarama - Square One</title>
+	<link rel="canonical" href="https://shopsquareone.com/store/dollarama/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Dollarama - Square One" />
+	<meta property="og:description" content="Dollarama, a chain of over 567 locations, is Canada’s largest operator of its kind. Dollarama aims to provide customers with a consistent shopping experience, offering a broad assortment of everyday consumer products, general merchandise, and seasonal items. Products are sold in individual or multiple units at select fixed price points up to $3.00" />
+	<meta property="og:url" content="https://shopsquareone.com/store/dollarama/" />
+	<meta property="og:site_name" content="Square One" />
+	<meta property="article:modified_time" content="2021-09-27T18:01:50+00:00" />
+	<meta property="og:image" content="https://shopsquareone.com/wp-content/uploads/2021/09/46671405dc0de828f82a47739f05d1fda416e43a.png" />
+	<meta property="og:image:width" content="500" />
+	<meta property="og:image:height" content="500" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://shopsquareone.com/#website","url":"https://shopsquareone.com/","name":"Square One","description":"For almost 50 years, Square One has built a reputation for being Mississauga\u2019s ultimate shopping destination.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://shopsquareone.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://shopsquareone.com/store/dollarama/#primaryimage","inLanguage":"en-US","url":"https://shopsquareone.com/wp-content/uploads/2021/09/46671405dc0de828f82a47739f05d1fda416e43a.png","contentUrl":"https://shopsquareone.com/wp-content/uploads/2021/09/46671405dc0de828f82a47739f05d1fda416e43a.png","width":500,"height":500},{"@type":"WebPage","@id":"https://shopsquareone.com/store/dollarama/#webpage","url":"https://shopsquareone.com/store/dollarama/","name":"Dollarama - Square One","isPartOf":{"@id":"https://shopsquareone.com/#website"},"primaryImageOfPage":{"@id":"https://shopsquareone.com/store/dollarama/#primaryimage"},"datePublished":"2021-09-26T14:27:32+00:00","dateModified":"2021-09-27T18:01:50+00:00","breadcrumb":{"@id":"https://shopsquareone.com/store/dollarama/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://shopsquareone.com/store/dollarama/"]}]},{"@type":"BreadcrumbList","@id":"https://shopsquareone.com/store/dollarama/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://shopsquareone.com/"},{"@type":"ListItem","position":2,"name":"Dollarama"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//shopsquareone.com' />
+<link rel='dns-prefetch' href='//adept-shop-ui.s3.us-east-2.amazonaws.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Square One &raquo; Feed" href="https://shopsquareone.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Square One &raquo; Comments Feed" href="https://shopsquareone.com/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="Square One &raquo; iCal Feed" href="https://shopsquareone.com/events/?ical=1" />
+<link rel="alternate" type="application/rss+xml" title="Square One &raquo; Dollarama Comments Feed" href="https://shopsquareone.com/store/dollarama/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://shopsquareone.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='print' onload="this.media='all'" />
+<noscript><link rel='stylesheet' id='wp-block-library-css'  href='https://shopsquareone.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='search-filter-plugin-styles-css'  href='https://shopsquareone.com/wp-content/plugins/search-filter-pro/public/assets/css/search-filter.min.css?ver=2.5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='styles-css'  href='https://shopsquareone.com/wp-content/themes/oxford/dist/css/style.css?ver=1.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://shopsquareone.com/wp-content/plugins/wpo365-login/apps/dist/pintra-redirect.js?ver=15.0' id='pintraredirectjs-js'></script>
+<script type='text/javascript' src='https://shopsquareone.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://shopsquareone.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='search-filter-plugin-build-js-extra'>
+/* <![CDATA[ */
+var SF_LDATA = {"ajax_url":"https:\/\/shopsquareone.com\/wp-admin\/admin-ajax.php","home_url":"https:\/\/shopsquareone.com\/","extensions":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://shopsquareone.com/wp-content/plugins/search-filter-pro/public/assets/js/search-filter-build.min.js?ver=2.5.8' id='search-filter-plugin-build-js'></script>
+<script type='text/javascript' src='https://shopsquareone.com/wp-content/plugins/search-filter-pro/public/assets/js/chosen.jquery.min.js?ver=2.5.8' id='search-filter-plugin-chosen-js'></script>
+<script type='text/javascript' src='https://adept-shop-ui.s3.us-east-2.amazonaws.com/production/oxford/autocomplete.js?ver=1.1.1' id='adeptmind-js'></script>
+<link rel="https://api.w.org/" href="https://shopsquareone.com/wp-json/" /><link rel="alternate" type="application/json" href="https://shopsquareone.com/wp-json/wp/v2/posts/88452" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://shopsquareone.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://shopsquareone.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.1" />
+<link rel='shortlink' href='https://shopsquareone.com/?p=88452' />
+<link rel="alternate" type="application/json+oembed" href="https://shopsquareone.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopsquareone.com%2Fstore%2Fdollarama%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://shopsquareone.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopsquareone.com%2Fstore%2Fdollarama%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.4.12 stt:1;" />
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://shopsquareone.com"><link rel="https://theeventscalendar.com/" href="https://shopsquareone.com/wp-json/tribe/events/v1/" /><link rel='manifest' href='https://shopsquareone.com/wp-content/themes/oxford/manifest.json' /><link rel="icon" href="https://shopsquareone.com/wp-content/uploads/2021/06/favicon.ico" sizes="32x32" />
+<link rel="icon" href="https://shopsquareone.com/wp-content/uploads/2021/06/favicon.ico" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://shopsquareone.com/wp-content/uploads/2021/06/favicon.ico" />
+<meta name="msapplication-TileImage" content="https://shopsquareone.com/wp-content/uploads/2021/06/favicon.ico" />
+	</head>
+	<body class="store-template-default single single-store postid-88452 tribe-no-js">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M47GMD5"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+	<!-- Begin alert banner -->
+	<header class="header header--alert">
+	<div class="header__alert-inner">
+							<p class="header__content"><span class="NormalTextRun SCXW204548036 BCX0" data-ccp-parastyle="Normal (Web)">Indoor Dining</span><span class="NormalTextRun SCXW204548036 BCX0" data-ccp-parastyle="Normal (Web)"> is</span> <span class="NormalTextRun SCXW204548036 BCX0" data-ccp-parastyle="Normal (Web)">Now Open - </span><span class="NormalTextRun SCXW204548036 BCX0" data-ccp-parastyle="Normal (Web)">Proof </span><span class="NormalTextRun SCXW204548036 BCX0" data-ccp-parastyle="Normal (Web)">of Vaccination</span><span class="NormalTextRun SCXW204548036 BCX0" data-ccp-parastyle="Normal (Web)"> &amp; Identification</span> <span class="NormalTextRun SCXW204548036 BCX0" data-ccp-parastyle="Normal (Web)">Required</span></p>
+					<a href="https://shopsquareone.com/shop-safely/?tab=tab-2"target="_blank" rel="noopener noreferrer"  class="header__link">Learn More</a>
+	</div>
+	<button class="button button--close animate animate--fade" aria-label="Close Alert Banner">
+		<svg xmlns="http://www.w3.org/2000/svg" width="10.707" height="10.707" viewBox="0 0 10.707 10.707">
+			<g data-name="Component 10 – 1" transform="translate(0.354 0.354)">
+				<line data-name="Line 1" x2="10" y2="10" fill="none" stroke="#fff" stroke-width="1"/>
+				<line data-name="Line 2" y1="10" x2="10" fill="none" stroke="#fff" stroke-width="1"/>
+			</g>
+		</svg>
+	</button>
+</header>
+<!-- End alert banner -->
+
+<!-- Begin header info -->
+<header class="header header--info">
+	<div class="header--mobile">
+		<div class="header__store-info">
+			<div class="header__hours open__hours" id="hoursToggleMobile">
+				<button class="button button--capacity hours-status"  data-closed="7:00PM" data-open="11:00AM">
+											<p class="open__time desktop">We&#039;re Open!</p>
+						<p class="open__time mobile">Open!</p>
+						<p class="close__time header">Closed</p>
+					
+					<svg xmlns="http://www.w3.org/2000/svg" width="7.995" height="4.704" viewBox="0 0 7.995 4.704">
+						<g data-name="Component 1 – 54" transform="translate(0.354 0.354)">
+							<path data-name="Path 27" d="M27.712,31.425l-3.644,3.644-3.644-3.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+							<path data-name="Path 27" d="M27.712,31.425H20.425" transform="translate(-20.425 -30.925)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+						</g>
+					</svg>
+
+				</button>
+				<!-- Hours need to go here -->
+				<ul class="header__hours--all">
+					<li class="hours--item"><strong>MON - SUN</strong>
+							<div>
+							<time datetime="11:00:00">11:00AM</time>
+							-<time datetime="19:00:00">7:00PM</time>
+							</div>
+							</li>					<li>
+						<a href="https://shopsquareone.com/hours-directions/" class="button button--fill fill--grey">
+							All Season Details &amp; Hours						</a>
+					</li>
+				</ul>
+			</div>
+						<div class="header__mall-capacity">
+				<button class="button button--capacity" id="capacityToggle">
+					<span class="indicator indicator--capacity indicator--green"></span>
+										Capacity										<svg xmlns="http://www.w3.org/2000/svg" width="7.995" height="4.704" viewBox="0 0 7.995 4.704">
+						<g data-name="Component 1 – 54" transform="translate(0.354 0.354)">
+							<path data-name="Path 27" d="M27.712,31.425l-3.644,3.644-3.644-3.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+							<path data-name="Path 27" d="M27.712,31.425H20.425" transform="translate(-20.425 -30.925)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+						</g>
+					</svg>
+
+				</button>
+				
+			</div>
+					</div>
+	</div>
+	
+<!-- Desktop -->
+	<div class="header__store-info open__hours">
+		<div class="header__hours hours-status" id="hoursToggle" data-closed="7:00PM" data-open="11:00AM">
+									<p class="open__time desktop">We&#039;re Open!</p>
+						<p class="open__time mobile">Open!</p>
+						<p class="close__time header">Closed</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="7.995" height="4.704" viewBox="0 0 7.995 4.704" class="arrow--down">
+				<g data-name="Component 1 – 54" transform="translate(0.354 0.354)">
+					<path data-name="Path 27" d="M27.712,31.425l-3.644,3.644-3.644-3.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+					<path data-name="Path 27" d="M27.712,31.425H20.425" transform="translate(-20.425 -30.925)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+				</g>
+			</svg>
+			<!-- Hours need to go here -->
+			<button class="button header__current-hours">
+				<span>11:00AM - 7:00PM</span>
+			</button>
+			<ul class="header__hours--all" id="hoursAll">
+				
+				<li class="hours--item"><strong>MON - SUN</strong>
+							<div>
+							<time datetime="11:00:00">11:00AM</time>
+							-<time datetime="19:00:00">7:00PM</time>
+							</div>
+							</li>				<li>
+					<a href="https://shopsquareone.com/hours-directions/" class="button button--fill fill--grey">
+						All Centre Details &amp; Hours					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header__mall-capacity">
+			
+
+			
+				
+				<div class="header__capacity no-parking">
+				<span class="indicator indicator--capacity indicator--green"></span>
+					<!-- Centre capacity -->
+											<a href="https://shopsquareone.com/centre-capacity/" target="">
+							<p>Centre Capacity</p>
+						</a>
+										<span class="header__capacity-calc">
+						2%					</span>
+				</div>
+
+			
+
+		</div>
+		<ul class="header__links">
+							<li class="logo">
+					<a href="https://shopfooddistrict.com/" class="button button--outline" target="_blank">
+						<img
+							src="https://shopsquareone.com/wp-content/uploads/2021/05/The-Food-District-Single-Line-Black.png"
+							alt="the food district logo"
+							class="header__logo"
+							height="646"
+							width="3600"
+						/>
+					</a>
+				</li>
+									<ul class="header__social">
+				<ul class="menu menu--social">
+					<li>
+						<button class="button">
+							Follow Us							<svg xmlns="http://www.w3.org/2000/svg" width="11.995" height="6.704" viewBox="0 0 11.995 6.704" class="svg svg--arrow">
+								<g data-name="Component 1 – 65" transform="translate(11.641 6.351) rotate(180)">
+									<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+								</g>
+							</svg>
+						</button>
+						<ul class="menu menu--social-dropdown">
+							<div class="icons five">
+																	<li>
+										<a class="animate animate--fade" href="https://www.instagram.com/shopsquareone" aria-label="View Instagram" target="_blank">
+											<svg xmlns="http://www.w3.org/2000/svg" width="19.762" height="19.762" viewBox="0 0 19.762 19.762">
+												<g id="Icon_feather-instagram" data-name="Icon feather-instagram" transform="translate(1 1)">
+													<path data-name="Path 3" d="M7.441,3h8.881a4.441,4.441,0,0,1,4.441,4.441v8.881a4.441,4.441,0,0,1-4.441,4.441H7.441A4.441,4.441,0,0,1,3,16.322V7.441A4.441,4.441,0,0,1,7.441,3Z" transform="translate(-3 -3)" fill="none" stroke="#24272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+													<path data-name="Path 4" d="M19.131,14.966a3.552,3.552,0,1,1-2.993-2.993A3.552,3.552,0,0,1,19.131,14.966Z" transform="translate(-6.698 -6.645)" fill="none" stroke="#24272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+													<path data-name="Path 5" d="M26.25,9.75h0" transform="translate(-12.484 -5.753)" fill="none" stroke="#24272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+												</g>
+											</svg>
+										</a>
+									</li>
+																
+																	<li>
+										<a class="animate animate--fade" href="https://www.facebook.com/SquareOne" aria-label="View Facebook" target="_blank">
+											<svg xmlns="http://www.w3.org/2000/svg" width="11.416" height="21.315" viewBox="0 0 11.416 21.315">
+												<path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M12.277,11.99l.592-3.857h-3.7v-2.5a1.929,1.929,0,0,1,2.175-2.084h1.683V.261A20.52,20.52,0,0,0,10.038,0C6.99,0,5,1.848,5,5.192v2.94H1.609V11.99H5v9.325h4.17V11.99Z" transform="translate(-1.609)" fill="#24272a"/>
+											</svg>
+										</a>
+									</li>
+								
+																	<li>
+										<a class="animate animate--fade" href="https://twitter.com/shopsquareone" aria-label="View Twitter" target="_blank">
+											<svg xmlns="http://www.w3.org/2000/svg" width="21.752" height="17.7" viewBox="0 0 21.752 17.7">
+												<path id="Icon_ionic-logo-twitter" data-name="Icon ionic-logo-twitter" d="M23.165,6.6A9.022,9.022,0,0,1,20.6,7.3a4.478,4.478,0,0,0,1.964-2.471,8.867,8.867,0,0,1-2.835,1.083A4.461,4.461,0,0,0,12.01,8.967a4.369,4.369,0,0,0,.115,1.019,12.647,12.647,0,0,1-9.2-4.669A4.472,4.472,0,0,0,4.313,11.28a4.359,4.359,0,0,1-2.028-.558v.055a4.467,4.467,0,0,0,3.582,4.379,4.492,4.492,0,0,1-1.175.157,4.21,4.21,0,0,1-.839-.083,4.47,4.47,0,0,0,4.172,3.1,8.947,8.947,0,0,1-5.545,1.913,9.046,9.046,0,0,1-1.065-.065A12.474,12.474,0,0,0,8.244,22.2,12.622,12.622,0,0,0,20.953,9.487c0-.194,0-.387-.014-.576A9.084,9.084,0,0,0,23.165,6.6Z" transform="translate(-1.413 -4.5)" fill="#24272a"/>
+											</svg>
+										</a>
+									</li>
+								
+																	<li>
+										<a class="animate animate--fade" href="https://www.pinterest.ca/shopSQUAREONE" aria-label="View Pinterest" target="_blank">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16.205" height="20.872" viewBox="0 0 16.205 20.872">
+												<path id="Icon_awesome-pinterest-p" data-name="Icon awesome-pinterest-p" d="M8.419.457C4.185.457,0,3.28,0,7.849c0,2.906,1.634,4.556,2.625,4.556.409,0,.644-1.139.644-1.461,0-.384-.978-1.2-.978-2.8A5.578,5.578,0,0,1,8.085,2.475c2.811,0,4.891,1.6,4.891,4.532,0,2.192-.879,6.3-3.727,6.3A1.833,1.833,0,0,1,7.342,11.5c0-1.56,1.09-3.071,1.09-4.68,0-2.732-3.875-2.237-3.875,1.065a4.849,4.849,0,0,0,.4,2.092c-.57,2.452-1.733,6.1-1.733,8.63,0,.78.111,1.548.186,2.328.14.157.07.14.285.062,2.08-2.848,2.006-3.4,2.947-7.132A3.347,3.347,0,0,0,9.5,15.352c4.383,0,6.352-4.272,6.352-8.122C15.848,3.131,12.307.457,8.419.457Z" transform="matrix(1, 0.017, -0.017, 1, 0.367, -0.457)" fill="#24272a"/>
+											</svg>
+										</a>
+									</li>
+								
+																	<li>
+										<a class="animate animate--fade" href="https://www.youtube.com/c/https://www.youtube.com/user/ShopSquareOne" aria-label="View YouTube" target="_blank">
+											<svg xmlns="http://www.w3.org/2000/svg" width="25.429" height="18.102" viewBox="0 0 25.429 18.102">
+												<path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M25.65,7.264a3.157,3.157,0,0,0-2.221-2.236C21.469,4.5,13.612,4.5,13.612,4.5s-7.857,0-9.816.528A3.157,3.157,0,0,0,1.575,7.264a33.118,33.118,0,0,0-.525,6.087,33.118,33.118,0,0,0,.525,6.087,3.11,3.11,0,0,0,2.221,2.2c1.959.528,9.816.528,9.816.528s7.857,0,9.816-.528a3.11,3.11,0,0,0,2.221-2.2,33.118,33.118,0,0,0,.525-6.087,33.118,33.118,0,0,0-.525-6.087ZM11.043,17.086V9.615l6.567,3.736-6.567,3.736Z" transform="matrix(1, 0.017, -0.017, 1, -0.663, -4.518)" fill="#24272a"/>
+											</svg>
+										</a>
+									</li>
+								
+								
+															</div>
+						</ul>
+					</li>
+				</ul>
+				<div class="header__language">
+				<button class="button button--language">
+									</button>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!-- end store info -->
+	<!-- Search toggle mobile -->
+	<button class="button button--search" id="mobileSearchToggle" aria-label="Open search">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16.273" height="16.273" viewBox="0 0 16.273 16.273">
+			<g data-name="Group 18" transform="translate(-220.245 -37.454)">
+				<g data-name="Ellipse 1" transform="translate(220.245 37.454)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="2">
+				<circle cx="7.373" cy="7.373" r="7.373" stroke="none"/>
+				<circle cx="7.373" cy="7.373" r="6.373" fill="none"/>
+				</g>
+				<line data-name="Line 1" x2="2.979" y2="2.979" transform="translate(232.832 50.041)" fill="#fff" stroke="#24272a" stroke-miterlimit="10" stroke-width="2"/>
+			</g>
+		</svg>
+		<span hidden>Search Button</span>
+	</button>
+	<!-- Search form mobile -->
+	<div class="header header--search-mobile">
+		<button class="button button--close" id="mobileSearchClose" aria-label="Close search">
+			<svg xmlns="http://www.w3.org/2000/svg" width="10.707" height="10.707" viewBox="0 0 10.707 10.707">
+				<g data-name="Component 10 – 1" transform="translate(0.354 0.354)">
+					<line data-name="Line 1" x2="10" y2="10" fill="none" stroke="#fff" stroke-width="1"/>
+					<line data-name="Line 2" y1="10" x2="10" fill="none" stroke="#fff" stroke-width="1"/>
+				</g>
+			</svg>
+		</button>
+		<form action="/" id="searchForm" class="form form--search">
+			<label for="search" class="sr-only" id="mobileSearch">Search</label>
+			<input type="text" name="search" placeholder="Search" class="input input--text" aria-labelledby="mobileSearch" />
+			<button type="submit" class="button button--submit" aria-label="Submit Search Form">
+				<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+					<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+						<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+						<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+						</g>
+						<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+					</g>
+				</svg>
+			</button>
+		</form>
+	</div>
+</header>
+<!-- End header info -->
+
+<header class="header header--default" id="header">
+	<div class="header__inner">
+					<a href="https://shopsquareone.com" aria-label="go to homepage" class="header__brand">
+				<img
+					src="https://shopsquareone.com/wp-content/uploads/2021/05/SquareOne_Logo_Black.png"
+					alt="square one logo"
+					class="header__logo mall-logo__sq1"
+					height="94"
+					width="600"
+				/>
+			</a>
+				<div class="header__inner-nav">
+
+		<nav class="menu menu--main" aria-label="Main Navigation"><ul id="menu-main-menu" class="menu__navigation"><li id="menu-item-18171" class="popmake-12725 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18171"><a href="https://shopsquareone.com/shop-safely/">Shop Safely</a>
+<ul class="sub-menu">
+	<li id="menu-item-31014" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31014"><a href="https://shopsquareone.com/centre-capacity/">Centre Capacity</a></li>
+</ul>
+</li>
+<li id="menu-item-12693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12693"><a href="https://shopsquareone.com/dining-2/">Dining</a>
+<ul class="sub-menu">
+	<li id="menu-item-27194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27194"><a href="https://shopsquareone.com/takeout-delivery/">Takeout &#038; Delivery</a></li>
+</ul>
+</li>
+<li id="menu-item-12694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12694"><a href="https://shopsquareone.com/gift-cards/">Gift Cards</a>
+<ul class="sub-menu">
+	<li id="menu-item-12715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12715"><a href="https://shopsquareone.com/gift-cards/classic-gift-card/">Classic Gift Card</a></li>
+	<li id="menu-item-12714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12714"><a href="https://shopsquareone.com/gift-cards/egift-card/">eGift Card</a></li>
+	<li id="menu-item-12713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12713"><a href="https://shopsquareone.com/gift-cards/corporate-gifting/">Corporate Gifting</a></li>
+</ul>
+</li>
+<li id="menu-item-12712" class="popmake-12725 menu-item menu-item-type-post_type menu-item-object-page menu-item-12712"><a href="https://shopsquareone.com/tourism/">Tourism</a></li>
+<li id="menu-item-12626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12626"><a href="#">Stores</a>
+<ul class="sub-menu">
+	<li id="menu-item-12709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12709"><a href="https://shopsquareone.com/directory-and-map/">Directory &#038; Map</a></li>
+	<li id="menu-item-18172" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18172"><a href="/directory-and-map/?offerings-desktop=curbside-pickup">Curbside Pickup</a></li>
+	<li id="menu-item-28170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28170"><a href="https://shopsquareone.com/store-offers/">Store Offers</a></li>
+	<li id="menu-item-12707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12707"><a href="https://shopsquareone.com/virtual-appointments/">Virtual Appointments</a></li>
+	<li id="menu-item-12710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12710"><a href="https://shopsquareone.com/save-your-spot/">Save Your Spot</a></li>
+</ul>
+</li>
+<li id="menu-item-12674" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12674"><a href="#">Visit</a>
+<ul class="sub-menu">
+	<li id="menu-item-12711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12711"><a href="https://shopsquareone.com/hours-directions/">Hours &#038; Directions</a></li>
+	<li id="menu-item-12716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12716"><a href="https://shopsquareone.com/visit/parking/">Parking</a></li>
+	<li id="menu-item-27307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27307"><a href="https://shopsquareone.com/events/">Events</a></li>
+	<li id="menu-item-12696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12696"><a href="https://shopsquareone.com/visit/services/">Services</a></li>
+	<li id="menu-item-12695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12695"><a href="https://shopsquareone.com/accessibility/">Accessibility</a></li>
+</ul>
+</li>
+</ul></nav>		<ul class="header__shop">
+			<li class="header__shop-link">
+							<button id="shopToggle" class="button button--fill button--shopnow header__shop-link lang__en" aria-label="open shop now menu button">Shop Now</button>
+
+							<!-- Shop Now Menu -->
+				<ul class="header__dropdown" id="shopNav">
+					<li class="header__dropdown--all">
+
+						<!-- Shop Now Links -->
+						
+						<!-- FRENCH LANG -->
+						
+							<!-- ENG LANG, FRENCH MALL -->
+							
+								<a href="https://shopsquareone.com/search-find-shop/" class="header--link-all" aria-label="shop all link">
+									Shop All									<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+										<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+											<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+											<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+											</g>
+											<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+										</g>
+									</svg>
+								</a>
+
+								<!-- COMMENTED OUT UNTIL APPROVED BY OXFORD -->
+
+								<!-- <BR><BR>
+								<a class="all-brands-link"  href="https://products.shopsquareone.com/brands/" class="header--link-all" aria-label="shop all brands link">
+									Shop All Brands									<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+										<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+											<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+											<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+											</g>
+											<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+										</g>
+									</svg>
+								</a>
+								<BR><BR>
+								<a class="all-stores-link"  href="https://products.shopsquareone.com/stores/" class="header--link-all" aria-label="shop all stores link">
+									Shop All Stores									<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+										<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+											<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+											<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+											</g>
+											<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+										</g>
+									</svg>
+								</a> -->
+
+							
+												<!-- End Shop Now Links -->
+
+					</li>
+					<!-- OG shop container -->
+					<li class="shop-container shop-container--all">
+						<ul class="menu menu--shop">
+																								<li><a href="https://products.shopsquareone.com/search/apparel/women">Women&#039;s Apparel</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/apparel/men">Men&#039;s Apparel</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/children-products">Children Products</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/athletic-&amp;-sporting">Athletic &amp; Sporting</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/footwear">Footwear</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/health-&amp;-beauty">Health &amp; Beauty</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/home-furnishings-&amp;-decor">Home Furnishings &amp; Decor</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/jewellery">Jewellery</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/gift-card">Gift Card</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/fashion-accessories">Fashion Accessories</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/appliances">Appliances</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/optical">Optical</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/electronics-&amp;-technology">Electronics &amp; Technology</a></li>
+																	<li><a href="https://products.shopsquareone.com/search/toys">Toys</a></li>
+																					</ul>
+					</li>
+
+					
+					<!-- Brands Container (hidden until triggered) -->
+					<!-- COMMENTED OUT UNTIL APPROVED BY OXFORD -->
+					<!-- <li class="shop-container shop-container--brands">
+						<div class="shop-container-wrapper">
+
+							<ul class="menu menu--shop menu--shop--brands">
+								< ?php foreach ( $top_brands_repeater as $top_brands ) : ?>
+									<li><a href="< ?php echo ( $top_brands['brand_url'] ); ?>">< ?php echo ( $top_brands['brand'] ); ?></a></li>
+								< ?php endforeach; ?>
+							</ul>
+
+						</div>
+					</li> -->
+
+					<!-- Stores Container (hidden until triggered) -->
+					<!-- COMMENTED OUT UNTIL APPROVED BY OXFORD -->
+					<!-- <li class="shop-container shop-container--stores">
+						<div class="shop-container-wrapper">
+							<ul class="menu menu--shop menu--shop--stores">
+								< ?php foreach ( $top_stores_repeater as $top_stores ) : ?>
+									<li><a href="< ?php echo ( $top_stores['store_url'] ); ?>">< ?php echo ( $top_stores['store'] ); ?></a></li>
+								< ?php endforeach; ?>
+							</ul>
+						</div>
+					</li> -->
+				</ul>
+				<!-- End Shop Now Menu OG -->
+			</li>
+		</ul>
+		<form action="/" id="searchForm" class="form form--search">
+			<label for="desktop-search" class="sr-only" id="desktopSearchLabel">Search</label>
+			<input type="text" name="desktop-search" placeholder="Search" class="input input--text" aria-labelledby="desktopSearchLabel" />
+			<button type="submit" class="button button--submit" aria-label="Submit Search Form">
+				<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+					<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+						<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+						<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+						</g>
+						<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+					</g>
+				</svg>
+			</button>
+		</form>
+		<!-- Desktop toggle mobile -->
+		<button class="button button--search" id="desktopSearchToggle" aria-label="Open Search">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16.273" height="16.273" viewBox="0 0 16.273 16.273">
+				<g data-name="Group 18" transform="translate(-220.245 -37.454)">
+					<g data-name="Ellipse 1" transform="translate(220.245 37.454)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="2">
+					<circle cx="7.373" cy="7.373" r="7.373" stroke="none"/>
+					<circle cx="7.373" cy="7.373" r="6.373" fill="none"/>
+					</g>
+					<line data-name="Line 1" x2="2.979" y2="2.979" transform="translate(232.832 50.041)" fill="#fff" stroke="#24272a" stroke-miterlimit="10" stroke-width="2"/>
+			</g>
+			</svg>
+			<span hidden>Search Button</span>
+		</button>
+		</div>
+	</div>
+</header>
+
+<header class="header header--default header--mobile" id="mobile-header">
+			<a href="https://shopsquareone.com" aria-label="square one logo" class="header__brand">
+			<img
+				src="https://shopsquareone.com/wp-content/uploads/2021/05/SquareOne_Logo_Black.png"
+				alt="square one logo"
+				class="header__logo mall-logo__sq1"
+				height="94"
+				width="600"
+			/>
+		</a>
+		
+	<ul class="header__shop">
+		<li class="header__shop-link">
+		<button id="mobileShopToggle" class="button button--fill button--shopnow header__shop-link lang__en">Shop Now</button>
+
+		<ul class="header__dropdown">
+			<li class="header__dropdown--all">
+				<a href="#" class="header--link-all">
+					Shop All					<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+						<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+							<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+							<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+							</g>
+							<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+						</g>
+					</svg>
+				</a>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	<button class="button" id="mallMenuToggle" aria-label="Open and Close mall menu">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+	
+	<div class="header__availability" id="mobileCapacity">
+						<!-- Centre capacity -->
+		<div class="header__indicator">
+			<span class="indicator indicator--capacity indicator--green"></span>
+			<div>2%</div> 
+		</div>
+					<a href="https://shopsquareone.com/centre-capacity/" target="">
+				<p>Centre Capacity</p>
+			</a>
+					</div>
+</header>
+
+<div class="header header__menu-mobile" id="mobileShopNav">
+	<ul class="menu menu--shop menu--mobile">
+						<li><a href="https://products.shopsquareone.com/search/apparel/women">Women's Apparel</a></li>
+					<li><a href="https://products.shopsquareone.com/search/apparel/men">Men's Apparel</a></li>
+					<li><a href="https://products.shopsquareone.com/search/apparel/unisex">Unisex Apparel</a></li>
+					<li><a href="https://products.shopsquareone.com/search/children-products">Children Products</a></li>
+					<li><a href="https://products.shopsquareone.com/search/athletic-&-sporting">Athletic & Sporting</a></li>
+					<li><a href="https://products.shopsquareone.com/search/footwear">Footwear</a></li>
+					<li><a href="https://products.shopsquareone.com/search/health-&-beauty">Health & Beauty</a></li>
+					<li><a href="https://products.shopsquareone.com/search/home-furnishings-&-decor">Home Furnishings & Decor</a></li>
+					<li><a href="https://products.shopsquareone.com/search/jewellery">Jewellery</a></li>
+					<li><a href="https://products.shopsquareone.com/search/gift-card">Gift Card</a></li>
+					<li><a href="https://products.shopsquareone.com/search/fashion-accessories">Fashion Accessories</a></li>
+					<li><a href="https://products.shopsquareone.com/search/appliances">Appliances</a></li>
+					<li><a href="https://products.shopsquareone.com/search/optical">Optical</a></li>
+					<li><a href="https://products.shopsquareone.com/search/electronics-&-technology">Electronics & Technology</a></li>
+					<li><a href="https://products.shopsquareone.com/search/toys">Toys</a></li>
+					
+		<li>
+			<!-- <a class="menu__item" href="https://shopsquareone.com/search-find-shop/">
+				Shop All 
+				<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+					<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+						<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+						<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+						</g>
+						<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+					</g>
+				</svg>
+			</a> -->
+
+
+			<!-- Shop Now Links -->
+
+			<!-- FRENCH LANG -->
+			
+				<!-- ENG LANG, FRENCH MALL -->
+				
+					<a href="https://shopsquareone.com/search-find-shop/" class="menu__item" aria-label="shop all link">
+						Shop All						<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+							<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+								<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+								<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+								</g>
+								<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+							</g>
+						</svg>
+					</a>
+					<BR><BR>
+					<a href="https://products.shopsquareone.com/brands/" class="menu__item" aria-label="shop all brands link">
+						Shop All Brands						<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+							<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+								<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+								<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+								</g>
+								<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+							</g>
+						</svg>
+					</a>
+					<BR><BR>
+					<a href="https://products.shopsquareone.com/stores/" class="menu__item" aria-label="shop all stores link">
+						Shop All Stores						<svg xmlns="http://www.w3.org/2000/svg" width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+							<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+								<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+								<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+								</g>
+								<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+							</g>
+						</svg>
+					</a>
+
+										<!-- End Shop Now Links -->
+
+		</li>
+	</ul>
+	<button class="button button--shop-close animate animate--fade" id="shopNavClose" aria-label="Close Shop Now">
+		<svg xmlns="http://www.w3.org/2000/svg" width="21.385" height="21.385" viewBox="0 0 21.385 21.385">
+		<g id="Group_132" data-name="Group 132" transform="translate(-343.186 -81.097)">
+			<path data-name="Path 108" d="M331,75.789H302.757" transform="translate(183.403 -185.869) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+			<path data-name="Path 109" d="M331,75.789H302.757" transform="translate(76.22 262.265) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/>
+		</g>
+		</svg>
+	</button>
+</div>
+
+<header class="header header--mobile-extra">
+	<div class="header__links">
+					<a href="https://shopfooddistrict.com/" class="button button--outline" target="_blank">
+				<img
+					src="https://shopsquareone.com/wp-content/uploads/2021/05/The-Food-District-Single-Line-Black.png"
+					alt="the food district logo"
+					class="header__logo"
+					height="646"
+					width="3600"
+				/>
+			</a>
+					</div>
+	
+</header>
+
+
+<nav class="menu menu--main-mobile alert__banner-spacing" aria-label="Main Navigation"><ul id="menu-main-menu-1" class="menu__navigation"><li class="popmake-12725 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18171"><a href="https://shopsquareone.com/shop-safely/">Shop Safely</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31014"><a href="https://shopsquareone.com/centre-capacity/">Centre Capacity</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12693"><a href="https://shopsquareone.com/dining-2/">Dining</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27194"><a href="https://shopsquareone.com/takeout-delivery/">Takeout &#038; Delivery</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12694"><a href="https://shopsquareone.com/gift-cards/">Gift Cards</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12715"><a href="https://shopsquareone.com/gift-cards/classic-gift-card/">Classic Gift Card</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12714"><a href="https://shopsquareone.com/gift-cards/egift-card/">eGift Card</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12713"><a href="https://shopsquareone.com/gift-cards/corporate-gifting/">Corporate Gifting</a></li>
+</ul>
+</li>
+<li class="popmake-12725 menu-item menu-item-type-post_type menu-item-object-page menu-item-12712"><a href="https://shopsquareone.com/tourism/">Tourism</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12626"><a href="#">Stores</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12709"><a href="https://shopsquareone.com/directory-and-map/">Directory &#038; Map</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18172"><a href="/directory-and-map/?offerings-desktop=curbside-pickup">Curbside Pickup</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28170"><a href="https://shopsquareone.com/store-offers/">Store Offers</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12707"><a href="https://shopsquareone.com/virtual-appointments/">Virtual Appointments</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12710"><a href="https://shopsquareone.com/save-your-spot/">Save Your Spot</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12674"><a href="#">Visit</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12711"><a href="https://shopsquareone.com/hours-directions/">Hours &#038; Directions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12716"><a href="https://shopsquareone.com/visit/parking/">Parking</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27307"><a href="https://shopsquareone.com/events/">Events</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12696"><a href="https://shopsquareone.com/visit/services/">Services</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12695"><a href="https://shopsquareone.com/accessibility/">Accessibility</a></li>
+</ul>
+</li>
+</ul></nav>
+<section class="banner banner--hero " role="banner">
+
+	<img width="1918" height="557" src="https://shopsquareone.com/wp-content/uploads/2021/06/shutterstock_569701330@2x_24909d413-1-1.png" class="attachment-full size-full" alt="Blurred mall corridor" loading="lazy" srcset="https://shopsquareone.com/wp-content/uploads/2021/06/shutterstock_569701330@2x_24909d413-1-1.png 1918w, https://shopsquareone.com/wp-content/uploads/2021/06/shutterstock_569701330@2x_24909d413-1-1-300x87.png 300w, https://shopsquareone.com/wp-content/uploads/2021/06/shutterstock_569701330@2x_24909d413-1-1-1024x297.png 1024w, https://shopsquareone.com/wp-content/uploads/2021/06/shutterstock_569701330@2x_24909d413-1-1-768x223.png 768w, https://shopsquareone.com/wp-content/uploads/2021/06/shutterstock_569701330@2x_24909d413-1-1-1536x446.png 1536w" sizes="(max-width: 1918px) 100vw, 1918px" />
+	
+			<div class="overlay-bg"></div>
+		
+			<div class="banner__content">
+			<h2 class="banner__title">
+				Dollarama			</h2>
+		</div>
+	
+	</section>
+
+<article class="single single--store">
+
+	<div class="wrapper--outer">
+		<div id="crumbs"><a href="https://shopsquareone.com">Home</a> <svg xmlns="http://www.w3.org/2000/svg" width="4.704" height="7.995" viewBox="0 0 4.704 7.995"><g id="Component_1_184" data-name="Component 1 â€“ 184" transform="translate(0.354 7.641) rotate(-90)"><path id="Path_27" data-name="Path 27" d="M27.712,31.425l-3.644,3.644-3.644-3.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#b0aeaf" stroke-miterlimit="10" stroke-width="1"/></g></svg> <a href="/directory-and-map/">Store</a> <svg xmlns="http://www.w3.org/2000/svg" width="4.704" height="7.995" viewBox="0 0 4.704 7.995"><g id="Component_1_184" data-name="Component 1 â€“ 184" transform="translate(0.354 7.641) rotate(-90)"><path id="Path_27" data-name="Path 27" d="M27.712,31.425l-3.644,3.644-3.644-3.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#b0aeaf" stroke-miterlimit="10" stroke-width="1"/></g></svg> <span class="current">Dollarama</span></div>	</div>
+
+	<section class="store__wrapper">
+
+		<div class="store__sidebar">
+
+			
+								<div class="store__logo">
+					<img src="https://shopsquareone.com/wp-content/uploads/2021/09/46671405dc0de828f82a47739f05d1fda416e43a.png" alt="Dollarama logo">
+				</div>
+
+				
+			<div class="store__info--container">
+
+
+
+				<ul class="store__info">
+					<li class="store__dropdown store__hours open__hours">
+
+						<button class="button hours-status" data-closed="8:00PM" data-open="10:00AM">
+							
+							<!-- TODAY OPEN/CLOSE -->
+							<strong>
+								<span class="open__time stores">Open Today</span><span class="close__time stores">Closed</span>							</strong>
+
+							<!-- TODAY HOURS -->
+							<span class="current__day test1">
+								
+									
+										10:00AM										-
+										8:00PM
+									
+															</span>
+
+
+							<svg xmlns="http://www.w3.org/2000/svg" width="7.995" height="4.704" viewBox="0 0 7.995 4.704">
+								<g data-name="Component 1 – 54" transform="translate(0.354 0.354)">
+									<path data-name="Path 27" d="M27.712,31.425l-3.644,3.644-3.644-3.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+									<path data-name="Path 27" d="M27.712,31.425H20.425" transform="translate(-20.425 -30.925)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+								</g>
+							</svg>
+									
+						</button>
+
+																			
+						<!-- In the dropdown -->
+						<ul>
+							<li class="hours__item">
+
+								<strong>Sun: </strong>&nbsp<span>11:00AM - 7:00PM</span><BR><BR><strong>Mon: </strong>&nbsp<span>10:00AM - 8:00PM</span><BR><BR><strong>Tue: </strong>&nbsp<span>10:00AM - 8:00PM</span><BR><BR><strong>Wed: </strong>&nbsp<span>10:00AM - 8:00PM</span><BR><BR><strong>Thu: </strong>&nbsp<span>10:00AM - 8:00PM</span><BR><BR><strong>Fri: </strong>&nbsp<span>10:00AM - 8:00PM</span><BR><BR><strong>Sat: </strong>&nbsp<span>10:00AM - 8:00PM</span><BR><BR>							</li>
+						</ul>
+
+
+						<!-- Store Phone -->
+													<li class="store__phone"><a class="no-underline" href="tel:+1905 279 2543">905 279 2543</a></li>
+						
+						<!-- Store Website -->
+													<li class="store__website"><a href="https://www.dollarama.com/en-CA/" target="_black" rel="noopener noreferrer">View Store Website</a></li>
+						
+						<!-- Store Curbside PickUp -->
+						<li class="store__curbside">
+															No Curbside Pick Up													</li>
+
+						<!-- Store View on Map -->
+						<li class="map__link"><a href="https://shopsquareone.com/directory-and-map/?displayView=map#/location/2-818" target="_blank" rel="noopener noreferrer">View on Map</a></li>
+
+					</li>
+				
+				</ul><!-- End store__info -->
+				
+									<div class="giftcard__indicator">
+						<img width="500" height="387" src="https://shopsquareone.com/wp-content/uploads/2021/06/SquareOne_GiftCard.png" class="attachment-full size-full" alt="Square One gift card with reflection." loading="lazy" srcset="https://shopsquareone.com/wp-content/uploads/2021/06/SquareOne_GiftCard.png 500w, https://shopsquareone.com/wp-content/uploads/2021/06/SquareOne_GiftCard-300x232.png 300w" sizes="(max-width: 500px) 100vw, 500px" />						Accepts Square One Gift Cards					</div>
+				
+			</div>
+
+							<div class="blog__container blog__desktop">
+					<h2>From the Blog</h2>
+
+					<div class="recent__posts">
+													<article class="blog blog--recent">
+								<img width="150" height="150" src="https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Girl Smiling" loading="lazy" srcset="https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-150x150.png 150w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-300x300.png 300w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-768x768.png 768w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-400x400.png 400w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-243x243.png 243w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327.png 1000w" sizes="(max-width: 150px) 100vw, 150px" />								<div class="blog__content">
+								<h3 class="blog__title">5 Standout Beauty Trends We’re Trying This Season</h3>
+									<a href="https://shopsquareone.com/5-standout-beauty-trends-were-trying-this-season/" class="button button--arrow scrolling up" aria-label="5 Standout Beauty Trends We’re Trying This Season">
+										
+<svg width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+</g>
+<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+</g>
+</svg>
+									</a>
+								</div>
+							</article>
+													<article class="blog blog--recent">
+								<img width="150" height="150" src="https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Valentine&#039;s Day Couple" loading="lazy" srcset="https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-150x150.png 150w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-300x300.png 300w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-768x768.png 768w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-400x400.png 400w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-243x243.png 243w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775.png 1000w" sizes="(max-width: 150px) 100vw, 150px" />								<div class="blog__content">
+								<h3 class="blog__title">Turn Up the Romance with Our Valentine’s Day Gift Guide</h3>
+									<a href="https://shopsquareone.com/turn-up-the-romance-with-our-valentines-day-gift-guide/" class="button button--arrow scrolling up" aria-label="Turn Up the Romance with Our Valentine’s Day Gift Guide">
+										
+<svg width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+</g>
+<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+</g>
+</svg>
+									</a>
+								</div>
+							</article>
+											</div>
+				</div>
+				
+			<!-- Store Offers Module Mobile -->
+			<div class="hide-for-desktop">
+				
+		
+<section class="section section--collapsible-content store-offers-module" aria-labelledby="collapsibleContentHeading">
+	
+	<h3 id="collapsibleContentHeading" class="visuallyhidden">Collapsible Content</h3>
+
+			<h2>Store Offers</h2>
+	
+	</section>
+
+			</div>
+
+								<div class="blog__container blog__mobile">
+						<h2>From the Blog</h2>
+
+						<div class="recent__posts">
+															<article class="blog blog--recent">
+									<img width="150" height="150" src="https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Girl Smiling" loading="lazy" srcset="https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-150x150.png 150w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-300x300.png 300w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-768x768.png 768w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-400x400.png 400w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-243x243.png 243w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327.png 1000w" sizes="(max-width: 150px) 100vw, 150px" />									<div class="blog__content">
+									<h3 class="blog__title">5 Standout Beauty Trends We’re Trying This Season</h3>
+										<a href="https://shopsquareone.com/5-standout-beauty-trends-were-trying-this-season/" class="button button--arrow scrolling up" aria-label="5 Standout Beauty Trends We’re Trying This Season">
+											
+<svg width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+</g>
+<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+</g>
+</svg>
+										</a>
+									</div>
+								</article>
+															<article class="blog blog--recent">
+									<img width="150" height="150" src="https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Valentine&#039;s Day Couple" loading="lazy" srcset="https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-150x150.png 150w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-300x300.png 300w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-768x768.png 768w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-400x400.png 400w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-243x243.png 243w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775.png 1000w" sizes="(max-width: 150px) 100vw, 150px" />									<div class="blog__content">
+									<h3 class="blog__title">Turn Up the Romance with Our Valentine’s Day Gift Guide</h3>
+										<a href="https://shopsquareone.com/turn-up-the-romance-with-our-valentines-day-gift-guide/" class="button button--arrow scrolling up" aria-label="Turn Up the Romance with Our Valentine’s Day Gift Guide">
+											
+<svg width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+</g>
+<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+</g>
+</svg>
+										</a>
+									</div>
+								</article>
+													</div>
+					</div>
+					
+			<main class="store__content mobile" style="display: none">
+								<div class="lux-brand__container ">
+								</div>
+				<p class="lead">Dollarama, a chain of over 567 locations, is Canada’s largest operator of its kind. Dollarama aims to provide customers with a consistent shopping experience, offering a broad assortment of everyday consumer products, general merchandise, and seasonal items. Products are sold in individual or multiple units at select fixed price points up to $3.00</p>				
+
+				</main>
+		</div>
+
+		<main class="store__content desktop">
+							<div class="lux-brand__container ">
+								</div>
+			<p class="lead">Dollarama, a chain of over 567 locations, is Canada’s largest operator of its kind. Dollarama aims to provide customers with a consistent shopping experience, offering a broad assortment of everyday consumer products, general merchandise, and seasonal items. Products are sold in individual or multiple units at select fixed price points up to $3.00</p>				<div id="mappedin-minimap"></div>
+							<script type="text/javascript">
+				window.mappedin = {
+					clientId: "605b58fccaa506001c2e16b4",
+					clientSecret: "FpQsAkJ4dXgHL2RPzIdm3Mv4AX0a17AM1aa2ZQvCEdfiz4tV",
+					venue: "oxford-square-one",
+					locationId: "2-818",
+					fullMapUrl: "https://shopsquareone.com/directory-and-map/?displayView=map#/",
+					lang: "fr"
+				};
+			</script>
+			<script src="https://d1p5cqqchvbqmy.cloudfront.net/minimap/release/minimap.js" type="text/javascript"></script>
+			
+			
+
+	
+		
+<section class="section section--collapsible-content store-offers-module" aria-labelledby="collapsibleContentHeading">
+	
+	<h3 id="collapsibleContentHeading" class="visuallyhidden">Collapsible Content</h3>
+
+			<h2>Store Offers</h2>
+	
+	</section>
+
+
+							<div class="blog__container blog__mobile">
+					<h2>From the Blog</h2>
+
+					<div class="recent__posts">
+													<article class="blog blog--recent">
+								<img width="150" height="150" src="https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Girl Smiling" loading="lazy" srcset="https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-150x150.png 150w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-300x300.png 300w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-768x768.png 768w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-400x400.png 400w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327-243x243.png 243w, https://shopsquareone.com/wp-content/uploads/2022/02/Untitled-design-2022-02-09T131718.327.png 1000w" sizes="(max-width: 150px) 100vw, 150px" />								<div class="blog__content">
+								<h3 class="blog__title">5 Standout Beauty Trends We’re Trying This Season</h3>
+									<a href="https://shopsquareone.com/5-standout-beauty-trends-were-trying-this-season/" class="button button--arrow scrolling up" aria-label="5 Standout Beauty Trends We’re Trying This Season">
+										
+<svg width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+</g>
+<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+</g>
+</svg>
+									</a>
+								</div>
+							</article>
+													<article class="blog blog--recent">
+								<img width="150" height="150" src="https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Valentine&#039;s Day Couple" loading="lazy" srcset="https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-150x150.png 150w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-300x300.png 300w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-768x768.png 768w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-400x400.png 400w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775-243x243.png 243w, https://shopsquareone.com/wp-content/uploads/2022/01/Untitled-design-2022-01-28T163746.775.png 1000w" sizes="(max-width: 150px) 100vw, 150px" />								<div class="blog__content">
+								<h3 class="blog__title">Turn Up the Romance with Our Valentine’s Day Gift Guide</h3>
+									<a href="https://shopsquareone.com/turn-up-the-romance-with-our-valentines-day-gift-guide/" class="button button--arrow scrolling up" aria-label="Turn Up the Romance with Our Valentine’s Day Gift Guide">
+										
+<svg width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+</g>
+<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+</g>
+</svg>
+									</a>
+								</div>
+							</article>
+											</div>
+				</div>
+						</main>
+	</section>
+</article>
+
+
+<!-- < ?php if ($products_count > 0) : ?>
+<div class="shop_the_store">
+
+	<article class="single single--store">
+
+		<section class="store__wrapper title_container">
+			<p class="title">< ?php esc_attr_e( 'Shop the Store', 'oxford-base' ); ?></p>
+			<a href="< ? php echo esc_attr( 'https://products.' . $domain_name . $lang . "/search/" . $products_url ); ?>" class="button button--outline-rounded" aria-label="Visit ">
+				< ?php esc_attr_e( 'View All', 'oxford-base' ); ?>
+			</a>
+		</section>
+
+		<section class="store__wrapper image_container">
+		
+			<div class="main-carousel">
+				< ?php foreach ( $products as $product ) : ?>
+
+					<div class="carousel-cell product product--carousel">
+
+						<div class="image-wrapper">
+
+							<img src="< ?php echo esc_html( $product->image->url ); ?>" alt="< ?php echo esc_attr( $product->title ); ?>" />
+							
+							<a class="product__overlay" href="< ?php echo esc_attr( $product->url ); ?>">
+								<span>< ?php esc_html_e( 'Shop Now', 'oxford-base' ); ?></span>
+								< ?php get_template_part( '/assets/svg/arrow.svg' ); ?>
+							</a>
+
+						</div>
+					
+						<a href="< ?php echo esc_attr( $product->url ); ?>">
+							<div class="product__content">
+								<h3 class="product__brand product product--carousel">< ?php echo esc_html( $product->store ); ?></h3>
+								<p class="product__desc">< ?php echo esc_attr( $product->title ); ?></p>
+								<p class="product__price">
+									$< ?php echo esc_attr( $product->price ); ?>
+								</p>
+							</div>
+						</a>
+
+					</div>
+
+				< ?php endforeach; ?>
+			</div>
+
+
+
+		</section>
+	</article>
+
+</div>
+< ?php endif; ?> -->
+	<!-- Hotjar implementation - Footer -->
+	<script>
+			</script>
+
+	
+<footer class="footer footer--default">
+
+	<div class="footer__information">
+		<a href="https://shopsquareone.com" aria-label="square one logo" class="footer__brand">
+			<img
+				src="https://shopsquareone.com/wp-content/uploads/2021/05/SquareOne_Logo_Black.png"
+				alt="square one logo"
+				class="header__logo mall-logo__sq1"
+				height="94"
+				width="600"
+			/>
+		</a>
+
+		<div class="footer__language">
+					</div>
+
+
+		<div class="footer__hours open__hours">
+			<a href="https://shopsquareone.com/hours-directions/" aria-label="View All Hours">
+				
+<svg width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+</g>
+<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+</g>
+</svg>
+			</a>
+			<h3 class="footer__subtitle hours-status" data-closed="7:00PM" data-open="11:00AM">
+				<span class="open__time desktop">We&#039;re Open!</span>
+				<span class="open__time mobile">Open!</span>
+				<span class="close__time header">Closed</span>
+			</h3>
+			11:00AM - 7:00PM		</div>
+		<div class="footer__address">
+			<a href="111" aria-label="View Directions">
+				
+<svg width="17.492" height="11.995" viewBox="0 0 17.492 11.995">
+<g data-name="Component 2 – 32" transform="translate(0 0.354)">
+<g data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+<path data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#24272a" stroke-miterlimit="10" stroke-width="1"/>
+</g>
+<path data-name="Path 34" d="M0,0V16.459" transform="translate(0 5.622) rotate(-90)" fill="none" stroke="#24272a" stroke-width="1"/>
+</g>
+</svg>
+			</a>
+			<h3 class="footer__subtitle">Visit!</h3>
+			100 City Centre Drive <span>Mississauga, ON L5B 2C9</span>		</div>
+
+		<div class="footer__social social social-icons_container mobile">
+			<div class="icons five">
+
+								<div class="icon instagram scrolling up">
+						<a href="https://www.instagram.com/shopsquareone" target="_blank" aria-label="Visit http://shopsquareone"><svg xmlns="http://www.w3.org/2000/svg" width="19.762" height="19.762" viewBox="0 0 19.762 19.762">
+	<g id="Icon_feather-instagram" data-name="Icon feather-instagram" transform="translate(1 1)">
+		<path id="Path_3" data-name="Path 3" d="M7.441,3h8.881a4.441,4.441,0,0,1,4.441,4.441v8.881a4.441,4.441,0,0,1-4.441,4.441H7.441A4.441,4.441,0,0,1,3,16.322V7.441A4.441,4.441,0,0,1,7.441,3Z" transform="translate(-3 -3)" fill="none" stroke="#24272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+		<path id="Path_4" data-name="Path 4" d="M19.131,14.966a3.552,3.552,0,1,1-2.993-2.993A3.552,3.552,0,0,1,19.131,14.966Z" transform="translate(-6.698 -6.645)" fill="none" stroke="#24272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+		<path id="Path_5" data-name="Path 5" d="M26.25,9.75h0" transform="translate(-12.484 -5.753)" fill="none" stroke="#24272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+	</g>
+</svg>
+</a>
+					</div>
+				
+									<div class="icon facebook scrolling up">
+						<a href="https://www.facebook.com/SquareOne" target="_blank" aria-label="Visit http://SquareOne">
+<svg xmlns="http://www.w3.org/2000/svg" width="11.416" height="21.315" viewBox="0 0 11.416 21.315">
+  <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M12.277,11.99l.592-3.857h-3.7v-2.5a1.929,1.929,0,0,1,2.175-2.084h1.683V.261A20.52,20.52,0,0,0,10.038,0C6.99,0,5,1.848,5,5.192v2.94H1.609V11.99H5v9.325h4.17V11.99Z" transform="translate(-1.609)" fill="#24272a"/>
+</svg>
+</a>
+					</div>
+				
+									<div class="icon twitter scrolling up">
+						<a href="https://twitter.com/shopsquareone" target="_blank" aria-label="Visit http://shopsquareone">
+<svg xmlns="http://www.w3.org/2000/svg" width="21.752" height="17.7" viewBox="0 0 21.752 17.7">
+  <path id="Icon_ionic-logo-twitter" data-name="Icon ionic-logo-twitter" d="M23.165,6.6A9.022,9.022,0,0,1,20.6,7.3a4.478,4.478,0,0,0,1.964-2.471,8.867,8.867,0,0,1-2.835,1.083A4.461,4.461,0,0,0,12.01,8.967a4.369,4.369,0,0,0,.115,1.019,12.647,12.647,0,0,1-9.2-4.669A4.472,4.472,0,0,0,4.313,11.28a4.359,4.359,0,0,1-2.028-.558v.055a4.467,4.467,0,0,0,3.582,4.379,4.492,4.492,0,0,1-1.175.157,4.21,4.21,0,0,1-.839-.083,4.47,4.47,0,0,0,4.172,3.1,8.947,8.947,0,0,1-5.545,1.913,9.046,9.046,0,0,1-1.065-.065A12.474,12.474,0,0,0,8.244,22.2,12.622,12.622,0,0,0,20.953,9.487c0-.194,0-.387-.014-.576A9.084,9.084,0,0,0,23.165,6.6Z" transform="translate(-1.413 -4.5)" fill="#24272a"/>
+</svg>
+</a>
+					</div>
+				
+									<div class="icon pinterest scrolling up">
+						<a href="https://www.pinterest.ca/shopSQUAREONE" target="_blank" aria-label="Visit http://shopSQUAREONE">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16.205" height="20.872" viewBox="0 0 16.205 20.872">
+								<path id="Icon_awesome-pinterest-p" data-name="Icon awesome-pinterest-p" d="M8.419.457C4.185.457,0,3.28,0,7.849c0,2.906,1.634,4.556,2.625,4.556.409,0,.644-1.139.644-1.461,0-.384-.978-1.2-.978-2.8A5.578,5.578,0,0,1,8.085,2.475c2.811,0,4.891,1.6,4.891,4.532,0,2.192-.879,6.3-3.727,6.3A1.833,1.833,0,0,1,7.342,11.5c0-1.56,1.09-3.071,1.09-4.68,0-2.732-3.875-2.237-3.875,1.065a4.849,4.849,0,0,0,.4,2.092c-.57,2.452-1.733,6.1-1.733,8.63,0,.78.111,1.548.186,2.328.14.157.07.14.285.062,2.08-2.848,2.006-3.4,2.947-7.132A3.347,3.347,0,0,0,9.5,15.352c4.383,0,6.352-4.272,6.352-8.122C15.848,3.131,12.307.457,8.419.457Z" transform="matrix(1, 0.017, -0.017, 1, 0.367, -0.457)" fill="#24272a"/>
+							</svg>
+						</a>
+					</div>
+				
+									<div class="icon youtube scrolling up">
+						<a href="https://www.youtube.com/c/https://www.youtube.com/user/ShopSquareOne" target="_blank" aria-label="Visit https://www.youtube.com/user/ShopSquareOne">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25.429" height="18.102" viewBox="0 0 25.429 18.102">
+								<path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M25.65,7.264a3.157,3.157,0,0,0-2.221-2.236C21.469,4.5,13.612,4.5,13.612,4.5s-7.857,0-9.816.528A3.157,3.157,0,0,0,1.575,7.264a33.118,33.118,0,0,0-.525,6.087,33.118,33.118,0,0,0,.525,6.087,3.11,3.11,0,0,0,2.221,2.2c1.959.528,9.816.528,9.816.528s7.857,0,9.816-.528a3.11,3.11,0,0,0,2.221-2.2,33.118,33.118,0,0,0,.525-6.087,33.118,33.118,0,0,0-.525-6.087ZM11.043,17.086V9.615l6.567,3.736-6.567,3.736Z" transform="matrix(1, 0.017, -0.017, 1, -0.663, -4.518)" fill="#24272a"/>
+							</svg>
+						</a>
+					</div>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	<div class="footer__menus">
+	<nav class="menu menu--footer" aria-label="Footer Navigation"><ul id="menu-footer-menu-footer-menu" class="menu menu--footer"><li id="menu-item-145816" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145816"><a href="https://shopsquareone.com/about/">About</a></li>
+<li id="menu-item-145817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145817"><a href="https://shopsquareone.com/careers/">Careers</a></li>
+<li id="menu-item-145818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145818"><a href="https://shopsquareone.com/leasing/">Leasing</a></li>
+<li id="menu-item-145819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145819"><a href="https://shopsquareone.com/tourism/">Tourism</a></li>
+<li id="menu-item-145825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145825"><a target="_blank" rel="noopener" href="https://www.oxfordproperties.com/privacy">Privacy</a></li>
+<li id="menu-item-145820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145820"><a href="https://shopsquareone.com/contact/">Contact</a></li>
+<li id="menu-item-145821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145821"><a href="https://shopsquareone.com/media/">Media</a></li>
+<li id="menu-item-145822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145822"><a href="https://shopsquareone.com/community/">Community</a></li>
+<li id="menu-item-145823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145823"><a href="https://shopsquareone.com/sustainability/">Sustainability</a></li>
+<li id="menu-item-145824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145824"><a href="https://shopsquareone.com/security/">Security</a></li>
+</ul></nav>		<div class="footer__social social social-icons_container desktop">
+			<div class="icons five">
+
+									<div class="icon instagram scrolling up">
+						<a href="https://www.instagram.com/shopsquareone" target="_blank" aria-label="Visit http://shopsquareone"><svg xmlns="http://www.w3.org/2000/svg" width="19.762" height="19.762" viewBox="0 0 19.762 19.762">
+	<g id="Icon_feather-instagram" data-name="Icon feather-instagram" transform="translate(1 1)">
+		<path id="Path_3" data-name="Path 3" d="M7.441,3h8.881a4.441,4.441,0,0,1,4.441,4.441v8.881a4.441,4.441,0,0,1-4.441,4.441H7.441A4.441,4.441,0,0,1,3,16.322V7.441A4.441,4.441,0,0,1,7.441,3Z" transform="translate(-3 -3)" fill="none" stroke="#24272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+		<path id="Path_4" data-name="Path 4" d="M19.131,14.966a3.552,3.552,0,1,1-2.993-2.993A3.552,3.552,0,0,1,19.131,14.966Z" transform="translate(-6.698 -6.645)" fill="none" stroke="#24272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+		<path id="Path_5" data-name="Path 5" d="M26.25,9.75h0" transform="translate(-12.484 -5.753)" fill="none" stroke="#24272a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+	</g>
+</svg>
+</a>
+					</div>
+				
+									<div class="icon facebook scrolling up">
+						<a href="https://www.facebook.com/SquareOne" target="_blank" aria-label="Visit http://SquareOne">
+<svg xmlns="http://www.w3.org/2000/svg" width="11.416" height="21.315" viewBox="0 0 11.416 21.315">
+  <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M12.277,11.99l.592-3.857h-3.7v-2.5a1.929,1.929,0,0,1,2.175-2.084h1.683V.261A20.52,20.52,0,0,0,10.038,0C6.99,0,5,1.848,5,5.192v2.94H1.609V11.99H5v9.325h4.17V11.99Z" transform="translate(-1.609)" fill="#24272a"/>
+</svg>
+</a>
+					</div>
+				
+									<div class="icon twitter scrolling up">
+						<a href="https://twitter.com/shopsquareone" target="_blank" aria-label="Visit http://shopsquareone">
+<svg xmlns="http://www.w3.org/2000/svg" width="21.752" height="17.7" viewBox="0 0 21.752 17.7">
+  <path id="Icon_ionic-logo-twitter" data-name="Icon ionic-logo-twitter" d="M23.165,6.6A9.022,9.022,0,0,1,20.6,7.3a4.478,4.478,0,0,0,1.964-2.471,8.867,8.867,0,0,1-2.835,1.083A4.461,4.461,0,0,0,12.01,8.967a4.369,4.369,0,0,0,.115,1.019,12.647,12.647,0,0,1-9.2-4.669A4.472,4.472,0,0,0,4.313,11.28a4.359,4.359,0,0,1-2.028-.558v.055a4.467,4.467,0,0,0,3.582,4.379,4.492,4.492,0,0,1-1.175.157,4.21,4.21,0,0,1-.839-.083,4.47,4.47,0,0,0,4.172,3.1,8.947,8.947,0,0,1-5.545,1.913,9.046,9.046,0,0,1-1.065-.065A12.474,12.474,0,0,0,8.244,22.2,12.622,12.622,0,0,0,20.953,9.487c0-.194,0-.387-.014-.576A9.084,9.084,0,0,0,23.165,6.6Z" transform="translate(-1.413 -4.5)" fill="#24272a"/>
+</svg>
+</a>
+					</div>
+				
+									<div class="icon pinterest scrolling up">
+						<a href="https://www.pinterest.ca/shopSQUAREONE" target="_blank" aria-label="Visit http://shopSQUAREONE">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16.205" height="20.872" viewBox="0 0 16.205 20.872">
+								<path id="Icon_awesome-pinterest-p" data-name="Icon awesome-pinterest-p" d="M8.419.457C4.185.457,0,3.28,0,7.849c0,2.906,1.634,4.556,2.625,4.556.409,0,.644-1.139.644-1.461,0-.384-.978-1.2-.978-2.8A5.578,5.578,0,0,1,8.085,2.475c2.811,0,4.891,1.6,4.891,4.532,0,2.192-.879,6.3-3.727,6.3A1.833,1.833,0,0,1,7.342,11.5c0-1.56,1.09-3.071,1.09-4.68,0-2.732-3.875-2.237-3.875,1.065a4.849,4.849,0,0,0,.4,2.092c-.57,2.452-1.733,6.1-1.733,8.63,0,.78.111,1.548.186,2.328.14.157.07.14.285.062,2.08-2.848,2.006-3.4,2.947-7.132A3.347,3.347,0,0,0,9.5,15.352c4.383,0,6.352-4.272,6.352-8.122C15.848,3.131,12.307.457,8.419.457Z" transform="matrix(1, 0.017, -0.017, 1, 0.367, -0.457)" fill="#24272a"/>
+							</svg>
+						</a>
+					</div>
+				
+									<div class="icon youtube scrolling up">
+						<a href="https://www.youtube.com/c/https://www.youtube.com/user/ShopSquareOne" target="_blank" aria-label="Visit https://www.youtube.com/user/ShopSquareOne">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25.429" height="18.102" viewBox="0 0 25.429 18.102">
+								<path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M25.65,7.264a3.157,3.157,0,0,0-2.221-2.236C21.469,4.5,13.612,4.5,13.612,4.5s-7.857,0-9.816.528A3.157,3.157,0,0,0,1.575,7.264a33.118,33.118,0,0,0-.525,6.087,33.118,33.118,0,0,0,.525,6.087,3.11,3.11,0,0,0,2.221,2.2c1.959.528,9.816.528,9.816.528s7.857,0,9.816-.528a3.11,3.11,0,0,0,2.221-2.2,33.118,33.118,0,0,0,.525-6.087,33.118,33.118,0,0,0-.525-6.087ZM11.043,17.086V9.615l6.567,3.736-6.567,3.736Z" transform="matrix(1, 0.017, -0.017, 1, -0.663, -4.518)" fill="#24272a"/>
+							</svg>
+						</a>
+					</div>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+</footer>
+
+<footer class="footer footer--secondary">
+	<div class="links--wrapper">
+		<a href="https://www.oxfordproperties.com/corp" rel="noreferrer noopener" target="_blank">
+			<img src="https://shopsquareone.com/wp-content/themes/oxford/assets/images/oxford-logo.png" alt="Oxford Logo" class="footer__logo" width="111" height="34">
+		</a>
+		<a href="https://cinnamontoast.ca" rel="noreferrer noopener" target="_blank">&copy; 2022</a>
+	</div>
+</footer>
+	<div class="section section--popups">
+		<div class="back_to_top scroll" id="scroll-top">
+	<button class="back_to_top--btn button" aria-label="go to the top of the page">
+		<svg xmlns="http://www.w3.org/2000/svg" width="11.995" height="17.492" viewBox="0 0 11.995 17.492">
+			<g id="Component_2_108" data-name="Component 2 – 108" transform="translate(0.354 17.492) rotate(-90)">
+				<g id="Component_1_13" data-name="Component 1 – 13" transform="translate(11.141 11.287) rotate(-90)">
+				<path id="Path_27" data-name="Path 27" d="M31.712,31.425l-5.644,5.644-5.644-5.644" transform="translate(-20.425 -31.425)" fill="none" stroke="#25272a" stroke-miterlimit="10" stroke-width="1"/>
+				</g>
+				<path id="Path_34" data-name="Path 34" d="M542.079,27V43.459" transform="translate(-27 547.701) rotate(-90)" fill="none" stroke="#25272a" stroke-width="1"/>
+			</g>
+		</svg>
+	</button>
+</div>
+
+<div class="kipsu--new lang__english">
+	<button class="kipsu--mobile button" id="kipsu-mobile" href="#" onclick="window.open('https://secure.kipsu.com/acct/widget/178/d83d', 'Online Chat','resizable=no,width=500,height=600,top=100,left=200'); return false;">
+
+		<!-- If a french mall -->
+		
+			<!-- Regular link -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="120.727" height="60.19" viewBox="0 0 120.727 60.19">
+				<path id="Path_93" data-name="Path 93" d="M1.2,199.026H-119.524v51.835h12.42v8.355l14.152-8.355H1.2Z" transform="translate(119.524 -199.026)" fill="#25272a"/>
+				<text id="_" class="question-mark" data-name="?" transform="translate(21.515 42.924)" fill="#fff" font-size="20" font-family="neue-haas-grotesk-display" font-weight="500" letter-spacing="0.05em">
+					<tspan x="-4" y="-10">Live Chat</tspan>
+				</text>
+			</svg>
+
+		
+	</button>
+</div>
+
+
+
+
+<!-- TrustArc Banner -->
+<div id="consent_blackbar"></div>
+
+<!-- 
+<div class="section section--cookies-compliance">
+
+		<div class="popup--cookie">
+
+		<div class="container">
+			<div class="cookie-content">
+				<p>We use cookies on our website. You will find further information on cookies in our <a class="c-link" href="https://www.oxfordproperties.com/corp/privacy" target="_blank" rel="noopener noreferrer" data-stringify-link="https://www.oxfordproperties.com/corp/privacy" data-sk="tooltip_parent">privacy statement.</a></p>
+			</div>
+
+			<div class="cookie-buttons">
+				<a href="javascript:void(0)" id="cookie-accept" aria-label="< ?php esc_html_e( 'Click to Accept Cookies', 'oxford-base' ); ?>">I Understand</a>
+				<a href="javascript:void(0)" id="cookie-decline" aria-label="< ?php esc_html_e( 'Click to Decline Cookies', 'oxford-base' ); ?>">< ?php esc_html_e( 'no thanks', 'oxford-base' ); ?></a>
+			</div>
+		</div>
+
+	</div>
+</div> -->
+	</div>
+
+	
+	<script type="text/javascript">
+var $buoop = {required:{e:0,f:0,o:0,s:0,c:0},test:false,newwindow:true,style:"top",insecure:true,unsupported:true,mobile:true,shift_page_down:true,api:2021.05};
+
+function $buo_f(){
+var e = document.createElement("script");
+e.src = "//browser-update.org/update.min.js";
+document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f, false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+</script>		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><link rel='stylesheet' id='wpml-legacy-horizontal-list-0-css'  href='//shopsquareone.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.min.css?ver=1' type='text/css' media='all' />
+<script type='text/javascript' src='https://shopsquareone.com/wp-content/themes/oxford/dist/js/blocks.js?ver=1.1.1' id='blocks-js'></script>
+<script type='text/javascript' src='https://shopsquareone.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://shopsquareone.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1' id='jquery-ui-datepicker-js'></script>
+<script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://shopsquareone.com/wp-content/themes/oxford/dist/js/frontend.js?ver=1.1.1' id='frontend-js'></script>
+<script type='text/javascript' src='https://shopsquareone.com/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-578f0ed5bb2facafe91","applicationID":"1718306795","transactionName":"YVcBYkpXCkEABhUIVlgdIlVMXwtcThYID15aVw==","queueTime":0,"applicationTime":1416,"atts":"TRACFAJNGU8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
