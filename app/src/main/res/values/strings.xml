@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="aplhabets_only">aplhabets only</string>
+<!--    <string name="errMsg">Invalid email or password. Please try again</string>-->
+    <string name="copyRight">Copyright 2022. All right reserved. The images used in this app belong to their owners. This app is not for commercial use and is only for educational purposes.</string>
+    <string-array name="fruits">
+        <item>Walmart</item>
+        <item>Freshco</item>
+        <item>Canadian Super Store</item>
+        <item>Food Basics</item>
+        <item>Dollarama</item>
+        <item>Dollar Tree</item>
+        <item>Spinneys</item>
+        <item>Walmart</item>
+        <item>Freshco</item>
+        <item>Canadian Super Store</item>
+        <item>Food Basics</item>
+        <item>Dollarama</item>
+        <item>Dollar Tree</item>
+        <item>Spinneys</item>
+    </string-array>
+
+    <string-array name="addresses">
+            <item>12 Leslie, Toronto, ON</item>
+            <item>34 Marham Rd, Markham, ON</item>
+            <item>55 Adam Road, Richmond Hill, ON</item>
+            <item>9 Young Road, Newmarket, ON</item>
+            <item>34 MarkhamRd Markham, ON</item>
+            <item>55 Adam Road Richmond Hill, ON</item>
+            <item>9 Young Road, Newmarket, ON</item>
+        <item>12 Leslie, Toronto, ON</item>
+        <item>34 Marham Rd, Markham, ON</item>
+        <item>55 Adam Road, Richmond Hill, ON</item>
+        <item>9 Young Road, Newmarket, ON</item>
+        <item>34 MarkhamRd Markham, ON</item>
+        <item>55 Adam Road Richmond Hill, ON</item>
+        <item>9 Young Road, Newmarket, ON</item>
+    </string-array>
+
+
+</resources>
