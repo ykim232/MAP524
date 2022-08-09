@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Grocery on the Go</string>
+    <string name="name_example_com">name@example.com</string>
+    <string name="alphabets_only">Alphabets ONLY</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="grocery_image_top">Grocery image top</string>
+    <string name="login">Login</string>
+    <string name="copyright">Copyright 2021. All right reserved. The images used in this app belong to their owners. This app is not for commercial use and is only for educational purposes.</string>
+</resources>
